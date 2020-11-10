@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width:25vw;
+    box-shadow: 0 25px 25px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding:0rem 3rem;
+}
+.cake img{
+    width:12vw;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    margin-top: -12px;
+}
+.cake{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(
+      to right,
+      rgba(245, 70, 66, 0.75),
+      rgba(194, 135, 9, 0.75)
+    );
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+  }
+.info h1{
+    font-size: 35px;
+    margin-top: -30px;
+}
+.info h3{
+    font-size: 20px;
+    padding: 8px 0px;
+    color:rgb(92, 92, 92);
+    font-weight: lighter;
+}
+.info p{
+    font-size: 15px;
+    padding: 8px 0px;
+    color:rgb(59, 59, 59);
+    font-weight: lighter;
+}
+.number{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+.number button{
+    padding: 10px 25px 10px 25px;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+    margin-left: 10px;
+  }
+button.active{
+    background-color: #585858;
+    color: white;
+}
+.gobble{
+    margin-top: 40px;
+}
+.gobble button{
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #c93330;
+    border: none;
+    color:white;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bolder;
+}
