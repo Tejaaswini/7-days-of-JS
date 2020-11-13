@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Tip Calculator</h1>
+      <div id="calculator">
+        <form>
+          <p>Total Bill Amount</p>
+          <p>Rs. <input id="billamt" type="text" placeholder="Amount" /></p>
+
+          <p>How much do you wanna tip?</p>
+          <p>
+            <select id="serviceQual">
+              <option disabled selected value="0">-- Choose tip --</option>
+              <option value="0.3">30% - Best Place</option>
+              <option value="0.2">20% - Good service</option>
+              <option value="0.15">15% - Uhh okayish</option>
+              <option value="0.1">10% - Eww</option>
+              <option value="0.05">05% - Why did we come here?</option>
+            </select>
+          </p>
+        </form>
+
+        <p>How many people are gonna go pitch in?</p>
+        <input id="peopleamt" type="text" placeholder="Number of People" />
+        <br />
+        <button type="button" id="calculate">Calculate!</button>
+      </div>
+      <div id="totalTip">
+        <span id="tip">Rs. 0.00</span>
+        <small id="each">each</small>
+      </div>
+    </div>
+  </body>
+</html>
