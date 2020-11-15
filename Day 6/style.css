@@ -1,0 +1,70 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+:root{
+    --hue-correct:green;
+    --hue-wrong:rgb(185, 0, 0);
+}
+body{
+    padding:0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--hue);
+}
+body.correct{
+    --hue: var(--hue-correct);
+}
+body.wrong{
+    --hue: var(--hue-wrong);
+}
+.container{
+    width: 800px;
+    background-color: rgb(28, 172, 255);
+    max-width: 80%;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    outline: none;
+}
+.btn:hover{
+    border-color: rgb(255, 255, 255);
+}
+.btn.correct{
+    background-color: var(--hue-correct);
+    color:white;
+    font-weight: bold;
+}
+.btn.wrong{
+    background-color: var(--hue-wrong);
+    color:white;
+    font-weight: bold;
+}
+.start-btn,.next-btn{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -15px;
+}
+.hide{
+    display: none;
+}
